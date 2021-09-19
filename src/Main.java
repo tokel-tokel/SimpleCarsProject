@@ -21,20 +21,6 @@ public class Main
         }
         truck.radioTune(54);
         truck.radioPlay();
-        firstRadioCar(cars).radioPlay();
 
     }
-
-    private static IRadio firstRadioCar(Car[] cars)
-    {
-        for(Car c : cars)
-        {
-            if (TokelUtils.isIRadio(c))
-            {
-                return (IRadio) c;
-            }
-        }
-        return null;
-    }
-
 }
